@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_basic_interp
+
+import std::io
+use ltl_basic_interp as lib
+
+fn main() {
+    io::println("ltl_basic_interp demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
